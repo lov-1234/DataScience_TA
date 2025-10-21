@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+\title{{\normalsize Tutorial 1:} \\ Introduction to Data Science \\~~\\ {\bf What is Data? - Solutions} }
+\author{Lovnesh Bhardwaj}
+\date{September 16, 2024}
+
+\begin{document}
+\maketitle
+
+\section*{Exercises}
+
+\begin{enumerate}
+
+\item 
+{\bf Identify Statistical Units}\\
+The statistical units in the table provided are the students Alice and Bob. These units are described by the following features:
+\begin{itemize}
+	\item Name
+	\item Age
+	\item Major
+\end{itemize}
+
+
+\item
+{\bf Differentiate Data Types}\\
+The following features are classified as:
+\begin{itemize}
+    \item Height of buildings in Switzerland: Continuous (Numerical)
+    \item Eye Color of students at USI:  Nominal (Categorical)
+    \item Number of Siblings of Data Science students: Discrete (Numerical)
+    \item Favorite Food of University Professors:  Nominal (Categorical)
+    \item Pixel brightness value on digital camera: Continuous (Numerical, subject to truncation)
+    \item Final ranking of 24 teams in UEFA Euro: Ordinal (Categorical)
+    \item Survival time of breast cancer patients: Continuous (Numerical, subject to censoring)
+\end{itemize}
+\textbf{A note for the students}: We had a brief discussion during the class about why we would want rankings to be
+	ordinal instead of discrete, one argument for them being ordinal can be the fact that rankings
+	provide information about the relative positions (1st, 2nd, 3rd, etc.), but do not offer a measure
+	of how much better or worse one rank is compared to another. In an ordinal ranking, you know the order 
+	but not the magnitude of difference between the positions. For example, if Germany ranked 12th in the 
+	Euros, Switzerland ranked 11th, and Italy ranked 13th, this tells you their relative order but not how
+	much better Switzerland was compared to Germany or Italy. In contrast, a discrete scale would involve
+	meaningful, fixed differences between values. However, rankings do not inherently convey such fixed differences,
+	which is why they are categorised as ordinal.
+
+\item
+{\bf Create Data Records}\\
+A data table for three employees is as follows:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Employee ID} & \textbf{Name} & \textbf{Department} & \textbf{Salary (CHF)} \\
+    \hline
+    101 & John & Data Science & 90,000 \\
+    102 & Jane & HR & 80,000 \\
+    103 & Max & Marketing & 85,000 \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\item
+{\bf Create Data Record from Frequency Table}\\
+Based on the frequency table:
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{ID} & \textbf{Major (Bachelor)} & \textbf{Gender} & \textbf{Status}\\
+    \hline
+	1 & Data Science & Male & Admitted\\
+	2 & Computer Science & Female & Denied\\
+	3 & Computer Science & Female & Admitted\\
+	4 & Data Science & Female & Denied\\
+	5 & Computer Science & Male & Denied\\
+	6 & Data Science & Female & Admitted\\
+	\vdots & \vdots & \vdots & \vdots\\
+	146 & Computer Science & Male & Admitted\\
+    \hline
+    \end{tabular}
+\end{table}
+
+\item
+{\bf Create Your Own Data Record}\\
+This exercise is up to how you interpret and analyse the picture. One idea is 
+that each picture can be one statistical unit. The features can include the number of 
+people in a painting, the colour palette of the picture, the aspect ratio, etc.
+
+
+\end{enumerate}
+
+\end{document}

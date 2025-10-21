@@ -1,0 +1,11 @@
+.RData
+.Rhistory
+.Rproj.user/
+.Ruserdata
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
